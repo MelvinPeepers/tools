@@ -1,16 +1,14 @@
 import React from 'react';
+import PropTypes  from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const Navbar = () =>  {
+const Navbar = ({ icon, title }) =>  {
   return (
     <nav className='navbar header-bg-primary'>
         <h1>
-          
+          <i className={icon} /> {title}
         </h1>
         <ul>
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
           <li>
             <Link to='/numbers'>Numbers</Link>
           </li>
@@ -26,6 +24,16 @@ const Navbar = () =>  {
         </ul>
       </nav>
   )
+}
+
+Navbar.defaultProps= {
+  title: "CC Tools",
+  icon: 'fas fa-tools'
+}
+
+Navbar.propTypes= {
+  title: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired
 }
 
 export default Navbar
