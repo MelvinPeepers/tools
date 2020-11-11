@@ -223,6 +223,10 @@ Navbar
   margin: 0 0.25rem;
 }
 
+.navbar li {
+  font-weight: bold;
+}
+
 .header-bg-primary {
   background: var(--header-bg-color);
 }
