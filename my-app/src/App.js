@@ -1,11 +1,10 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
-import Numbers from './components/pages/Numbers.js';
-import NumSequences from './components/pages/NumSequences.js';
-import InitialFraud from './components/pages/InitialFraud.js';
-import PasswordGen from './components/pages/PasswordGen.js';
+import Numbers from './components/pages/numbers/Numbers.js';
+import NumSequences from './components/pages/numSequences/NumSequences.js';
+import InitialFraud from './components/pages/initialFraud/InitialFraud.js';
+import PasswordGen from './components/pages/passwordGen/PasswordGen.js';
 import './App.css';
-import { Fragment } from 'react';
 
 function App() {
 
