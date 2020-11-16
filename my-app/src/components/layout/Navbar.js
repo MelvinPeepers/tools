@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Navbar = ({ icon, title }) =>  {
   return (
     <nav className='navbar'>
-      <div className="flex-container">
+      <div className="container flex-container">
         <h1>
           <i className={icon} /> {title}
         </h1>
@@ -14,7 +14,7 @@ const Navbar = ({ icon, title }) =>  {
             <Link to='/numbers'>Numbers</Link>
           </li>
           <li>
-            <Link to='/numSequences'>Num Sequences</Link>
+            <Link to='/numSequences'>Num Seq</Link>
           </li>
           <li>
             <Link to='/initialFraud'>Initial Fraud</Link>
