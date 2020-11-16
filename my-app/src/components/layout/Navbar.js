@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 
 const Navbar = ({ icon, title }) =>  {
   return (
-    <nav className='navbar header-bg-primary'>
+    <nav className='navbar'>
+      <div className="flex-container">
         <h1>
           <i className={icon} /> {title}
         </h1>
@@ -22,6 +23,7 @@ const Navbar = ({ icon, title }) =>  {
             <Link to='/passwordGen'>Password Gen</Link>
           </li>
         </ul>
+      </div>
       </nav>
   )
 }
