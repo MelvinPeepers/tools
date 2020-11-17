@@ -2,9 +2,11 @@ import React, { Fragment } from 'react';
 const InitialFraud = () => {
   return (
     <Fragment>
-      <h1>Intial Fraud</h1>
-      <p>App to Generate interal comments for Fraud</p>
-      <p>Versioin: 1.0.0 alpha</p>
+      <div className="header-secondary">
+        <h2>Intial Fraud</h2>
+        <p>App to Generate interal comments for Fraud</p>
+        <p>Version: 1.0.0 alpha</p>
+      </div>
     </Fragment>
   )
 }

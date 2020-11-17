@@ -2,9 +2,11 @@ import React, { Fragment } from 'react';
 const PasswordGen = () => {
   return (
     <Fragment>
-      <h1>Password Generator</h1>
-      <p>App to Generate Passwords</p>
-      <p>Versioin: 1.0.0 alpha</p>
+      <div className="header-secondary">
+        <h2>Password Generator</h2>
+        <p>App to Generate Passwords</p>
+        <p>Version: 1.0.0 alpha</p>
+      </div>
     </Fragment>
   )
 }
