@@ -20,7 +20,7 @@ const Navbar = ({ icon, title }) =>  {
             <Link to='/initialFraud'>Initial Fraud</Link>
           </li>
           <li>
-            <Link to='/passwordGen'>Password Gen</Link>
+            <Link to='/passwordGen'>Pass Gen</Link>
           </li>
         </ul>
       </div>

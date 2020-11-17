@@ -135,7 +135,7 @@ Global Styles
 */
 
 :root {
-  --main-bg-color: #fff;
+  --main-bg-color: #35363a;
   --header-bg-color: #f0f0f0;
   --main-tx-color: #000;
   --input-bg-color: #f0f0f0;
@@ -159,7 +159,7 @@ html {
 }
 
 h1 {
-  color: var(--submit-bg-color);
+  color: var(--main-tx-color);
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
@@ -194,8 +194,13 @@ Navbar
 */
 
 .navbar {
-  background: var(--header-bg-color);
-  box-shadow: 2px 2px 4px var(--header-bg-color);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(242, 176, 94, 1) 0%,
+    rgba(185, 47, 47, 1) 100%
+  );
 }
 
 .flex-container {
@@ -282,5 +287,21 @@ Media Queries
 @media (max-width: 573px) {
   .flex-container {
     width: 100%;
+  }
+  .navbar ul {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .flex-container {
+    justify-content: center;
+    margin: 0;
+  }
+  .navbar ul {
+    margin: 0;
+  }
+  .navbar ul li a {
+    padding: 5px;
   }
 }
