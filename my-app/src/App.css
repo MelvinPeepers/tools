@@ -135,12 +135,14 @@ Global Styles
 */
 
 :root {
-  --main-bg-color: #35363a;
-  --header-bg-color: #f0f0f0;
-  --main-tx-color: #000;
-  --input-bg-color: #f0f0f0;
-  --submit-bg-color: #f2b05e;
-  --copy-bg-color: #c73e3e;
+  --main-bg-color: #fff;
+  --dark-main-bg-color: #35363a;
+  --header-bg-color: #f9be2b;
+  --nav-tx-color: #fbfdfd;
+  --main-tx-color: #0b142e;
+  --input-bg-color: #f5f6f8;
+  --submit-bg-color: #f9be2b;
+  --copy-bg-color: #ff1818;
 }
 
 * {
@@ -178,12 +180,7 @@ p {
 }
 
 a {
-  color: var(--main-tx-color);
   text-decoration: none;
-}
-
-a:hover {
-  color: var(--submit-bg-color);
 }
 
 /*
@@ -206,13 +203,7 @@ Navbar
 */
 
 .navbar {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    180deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(242, 176, 94, 1) 0%,
-    rgba(185, 47, 47, 1) 100%
-  );
+  background-color: var(--header-bg-color);
 }
 
 .flex-container {
@@ -220,6 +211,10 @@ Navbar
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
+}
+
+.navbar h1 {
+  color: var(--nav-tx-color);
 }
 
 .navbar ul {
@@ -232,10 +227,12 @@ Navbar
 .navbar ul li a {
   padding: 12px;
   text-align: center;
+  color: var(--nav-tx-color);
 }
 
 .navbar ul li a:hover {
-  border-bottom: 2px solid var(--submit-bg-color);
+  color: var(--copy-bg-color);
+  border-bottom: 2px solid var(--copy-bg-color);
 }
 
 /*

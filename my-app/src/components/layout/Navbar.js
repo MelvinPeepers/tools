@@ -24,7 +24,7 @@ const Navbar = ({ icon, title }) =>  {
           </li>
         </ul>
       </div>
-      </nav>
+    </nav>
   )
 }
 
