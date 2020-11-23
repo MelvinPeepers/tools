@@ -1,3 +1,4 @@
+import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Numbers from './components/pages/numbers/Numbers.js';
@@ -14,9 +15,13 @@ function App() {
       <Navbar />
       <div className="container">
         <Switch>
+          <Route exact path='/' render={props => (
+            <Fragment>
+              <InitialFraud />
+            </Fragment>
+          )} />
           <Route exact path='/numbers' component={Numbers} />
           <Route exact path='/numSequences' component={NumSequences} />
-          <Route exact path='/initialFraud' component={InitialFraud} />
           <Route exact path='/passwordGen' component={PasswordGen} />
         </Switch>
       </div>

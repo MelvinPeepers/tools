@@ -11,13 +11,13 @@ const Navbar = ({ icon, title }) =>  {
         </h1>
         <ul>
           <li>
-            <Link to='/numbers'>Numbers</Link>
+          <Link to='/'>Initial Fraud</Link>
+          </li>
+          <li>
+            <Link to='/number'>Numbers</Link>
           </li>
           <li>
             <Link to='/numSequences'>Num Seq</Link>
-          </li>
-          <li>
-            <Link to='/initialFraud'>Initial Fraud</Link>
           </li>
           <li>
             <Link to='/passwordGen'>Pass Gen</Link>
