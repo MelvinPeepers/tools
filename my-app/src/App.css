@@ -296,9 +296,9 @@ Media Queries
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 540px) {
   .flex-container {
-    width: 100%;
+    padding: 20px 0;
   }
   .navbar ul {
     padding: 0;
@@ -311,5 +311,15 @@ Media Queries
 @media (max-width: 400px) {
   .navbar ul {
     font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar ul {
+    font-size: 1.6rem;
+    flex-direction: column;
+  }
+  .navbar ul li {
+    padding-bottom: 10px;
   }
 }
