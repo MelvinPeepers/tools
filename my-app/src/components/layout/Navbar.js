@@ -14,7 +14,7 @@ const Navbar = ({ icon, title }) =>  {
           <Link to='/'>Initial Fraud</Link>
           </li>
           <li>
-            <Link to='/number'>Numbers</Link>
+            <Link to='/numbers'>Numbers</Link>
           </li>
           <li>
             <Link to='/numSequences'>Num Seq</Link>
