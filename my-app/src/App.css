@@ -136,11 +136,9 @@ Global Styles
 
 :root {
   --main-bg-color: #fff;
-  --dark-main-bg-color: #35363a;
-  --header-bg-color: #f9be2b;
-  --nav-tx-color: #fbfdfd;
+  --header-bg-color: #e98400;
   --main-tx-color: #0b142e;
-  --input-bg-color: #f5f6f8;
+  --secondary-tx-color: #526ead;
   --submit-bg-color: #f9be2b;
   --copy-bg-color: #ff1818;
 }
@@ -157,17 +155,16 @@ html {
   font-size: 62.5%;
   line-height: 1.6;
   background-color: var(--main-bg-color);
-  color: var(--main-tx-color);
 }
 
 h1 {
-  color: var(--main-tx-color);
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
 }
 
 h2 {
+  color: var(--secondary-tx-color);
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
@@ -175,6 +172,7 @@ h2 {
 }
 
 p {
+  color: var(--main-tx-color);
   font-size: 1.8rem;
   text-align: center;
 }
@@ -204,6 +202,7 @@ Navbar
 
 .navbar {
   background-color: var(--header-bg-color);
+  color: var(--main-bg-color);
 }
 
 .flex-container {
@@ -211,10 +210,6 @@ Navbar
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-}
-
-.navbar h1 {
-  color: var(--nav-tx-color);
 }
 
 .navbar ul {
