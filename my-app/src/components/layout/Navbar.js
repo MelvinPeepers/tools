@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes  from 'prop-types';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = ({ icon, title }) =>  {
   return (
@@ -11,16 +11,16 @@ const Navbar = ({ icon, title }) =>  {
         </h1>
         <ul>
           <li>
-          <Link to='/'>Initial Fraud</Link>
+          <NavLink exact to='/' className="main-nav" activeClassName="main-nav-active">Initial Fraud</NavLink>
           </li>
           <li>
-            <Link to='/numbers'>Numbers</Link>
+            <NavLink exact to='/numbers' className="main-nav" activeClassName="main-nav-active">Numbers</NavLink>
           </li>
           <li>
-            <Link to='/numSequences'>Num Seq</Link>
+            <NavLink exact to='/numSequences' className="main-nav" activeClassName="main-nav-active">Num Seq</NavLink>
           </li>
           <li>
-            <Link to='/passwordGen'>Pass Gen</Link>
+            <NavLink exact to='/passwordGen' className="main-nav" activeClassName="main-nav-active">Pass Gen</NavLink>
           </li>
         </ul>
       </div>
