@@ -158,7 +158,7 @@ html {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: bold;
   text-align: center;
 }
@@ -173,7 +173,7 @@ h2 {
 
 p {
   color: var(--main-tx-color);
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -188,7 +188,7 @@ Utilities
 */
 
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   overflow: auto;
   padding: 0 20px;
@@ -207,6 +207,7 @@ Navbar
 
 .flex-container {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
@@ -216,18 +217,18 @@ Navbar
   display: flex;
   font-size: 2.2rem;
   font-weight: bold;
-  padding: 0 4px;
 }
 
 .navbar ul li a {
-  padding: 12px;
+  padding: 12px 12px;
+  margin: 0 18px;
   text-align: center;
   color: var(--nav-tx-color);
 }
 
-.navbar ul li a:hover {
-  color: var(--copy-bg-color);
-  border-bottom: 2px solid var(--copy-bg-color);
+.main-nav-active {
+  font-weight: bold;
+  border-bottom: 3px solid var(--main-bg-color);
 }
 
 /*
@@ -257,62 +258,74 @@ Media Queries
 }
 
 @media (max-width: 1029px) {
-  .navbar ul {
-    padding-top: 20px;
-  }
-}
-
-@media (max-width: 750px) {
-  .navbar ul {
-    font-size: 1.9rem;
-  }
-}
-
-@media (max-width: 680px) {
-  .navbar ul {
-    font-size: 1.7rem;
-    padding: 20px 0;
-  }
-  .navbar ul li a {
-    padding: 10px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 602px) {
-  .navbar ul {
-    font-size: 1.6rem;
-  }
-}
-
-@media (max-width: 579px) {
-  .navbar ul {
-    font-size: 1.4rem;
-  }
-}
-
-@media (max-width: 540px) {
   .flex-container {
     padding: 20px 0;
   }
   .navbar ul {
-    padding: 0;
+    padding-top: 20px;
   }
   .navbar ul li a {
-    padding: 5px;
+    padding: 12px 10px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 810px) {
   .navbar ul {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 705px) {
   .navbar ul {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 685px) {
+  .navbar ul {
+    font-size: 1.5rem;
+  }
+  .navbar ul li a {
+    padding: 12px 8px;
+  }
+}
+
+@media (max-width: 614px) {
+  .navbar ul {
+    font-size: 1.4rem;
+  }
+  .navbar ul li a {
+    padding: 12px 5px;
+  }
+}
+
+@media (max-width: 570px) {
+  .flex-container {
+    padding: 20px 0;
+  }
+  .navbar ul li a {
+    padding: 0;
+  }
+}
+
+@media (max-width: 530px) {
+  .navbar ul {
+    font-size: 1.4rem;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .flex-container {
+    display: flex;
     flex-direction: column;
+  }
+  .navbar ul {
+    font-size: 2rem;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
   }
   .navbar ul li {
     padding-bottom: 10px;
