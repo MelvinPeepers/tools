@@ -10,18 +10,18 @@ const Numbers = () => {
           <form>
             <ul>
               <li>
-                <label>Input Number: </label>
-                <input
-                  type="text"
+                <label class='label' for="text-input">Input Number: </label>
+                <input class="input"
+                  type="text" id="text-input"
                 />
-                <button>Submit</button>
+                <button class="form-input form-btn">Submit</button>
               </li>
               <li>
-                <label>Output Number: </label>
-                <input
-                  type="text"
-                />
-                <button>Copy</button>
+                <label class='label' for="text-input">Output Number: </label>
+                <textarea class="output"
+                  type="text" id="text-input">
+                </textarea>
+                <button class="form-output form-btn">Copy</button>
               </li>
             </ul>
           </form>  
