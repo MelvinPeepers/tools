@@ -6,22 +6,22 @@ const Numbers = () => {
     <Fragment>
       <div className="header-secondary">
         <h2>Strip and format numbers to 11 digits</h2>
-        <div class="container-form">
+        <div className="container-form">
           <form>
-            <ul class="form-list">
-              <li class="list-input">
-                <label class='label' for="text-input">Input Number: </label>
-                <input class="input"
+            <ul className="form-list">
+              <li className="list-input">
+                <label className='label' for="text-input">Input Number: </label>
+                <input className="input"
                   type="text" id="text-input"
                 />
-                <button class="form-input form-btn">Submit</button>
+                <button className="form-input form-btn" type="submit">Submit</button>
               </li>
-              <li class="list-output">
-                <label class='label' for="text-input">Output Number: </label>
-                <input class="output"
+              <li className="list-output">
+                <label className='label' for="text-input">Output Number: </label>
+                <input className="output"
                   type="text" id="text-input">
                 </input>
-                <button class="form-output form-btn">Copy</button>
+                <button className="form-output form-btn">Copy</button>
               </li>
             </ul>
           </form>  
