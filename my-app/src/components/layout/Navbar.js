@@ -11,7 +11,7 @@ const Navbar = ({ icon, title }) =>  {
         </h1>
         <ul>
           <li>
-          <NavLink exact to='/' className="main-nav" activeClassName="main-nav-active">Initial Fraud</NavLink>
+          <NavLink exact to='/fraud' className="main-nav" activeClassName="main-nav-active">Initial Fraud</NavLink>
           </li>
           <li>
             <NavLink exact to='/numbers' className="main-nav" activeClassName="main-nav-active">Numbers</NavLink>
