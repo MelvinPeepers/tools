@@ -12,11 +12,11 @@ const Login = () => {
         <ul className="form-list">
           <li className="list-input">
           <label className='label' for="text-input">Username: </label>
-            <input className="input" type="text" placeholder="Email" name="email"></input>
+            <input className="input" type="text" name="email"></input>
           </li>
           <li className="list-input">
           <label className='label' for="text-input">Password: </label>
-            <input className="input" type="password" placeholder="Password" name="password"></input>
+            <input className="input" type="password" name="password"></input>
           </li>
           <input className="form-input form-btn" type="submit"></input>
           </ul>
