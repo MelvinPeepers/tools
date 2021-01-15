@@ -232,7 +232,7 @@ form {
 
 .list-output {
   padding-top: 20px;
-  margin-right: 12codpx;
+  margin-right: 12px;
 }
 
 .input,
@@ -246,4 +246,10 @@ form {
 .label {
   font-size: 2rem;
   margin-right: 10px;
+}
+
+.output {
+  width: 400px;
+  padding-bottom: 30px;
+  margin: 0 auto 10px;
 }
