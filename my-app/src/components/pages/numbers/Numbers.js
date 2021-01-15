@@ -14,6 +14,16 @@ const Numbers = () => {
     setInputValue("");
   }
 
+  const handleCopy = () => {
+    let copyText = document.getElementById("text-input")
+    copyText.select()
+    copyText.setSelectionRange(0, 9999)
+    document.execCommand("copy")
+    alert(`Email copied: ${copyText.value} `)
+
+  }
+
+
   return (
     <Fragment>
       <div className="header-secondary">
@@ -30,13 +40,13 @@ const Numbers = () => {
                   value={inputValue}
                   onChange={changeInput}
                 />
-                <button className="form-input form-btn" type="submit">Submit</button>
-                <button id="resetInput" onClick={reset}>Reset</button>
+                {/*<button className="form-input form-btn" type="submit">Submit</button>*/}
+                <button className="form-input form-btn" id="resetInput" onClick={reset}>Reset</button>
               </li>
               <li className="list-output">
-                <div className='label'>Output Number: {inputValue}</div>
-                
-                <button className="form-output form-btn">Copy</button>
+                <div className='label'>Output Number:</div>
+                <div className='label output list-output'>{inputValue}</div>
+                <button className="form-output form-btn" onClick={handleCopy}>Copy</button>
               </li>
             </ul>
           </form>  
