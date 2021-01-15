@@ -8,7 +8,7 @@ const Login = () => {
         <h2>Login to CC Tools</h2>
       </div>
       <div className="container-form">
-        <form netlify netlify-honeypot="bot-field" hidden>
+        <form>
         <ul className="form-list">
           <li className="list-input">
           <label className='label' for="text-input">Username: </label>
