@@ -29,7 +29,7 @@ const Numbers = () => {
       <div className="header-secondary">
         <h2>Strip and format numbers to 11 digits</h2>
         <div className="container-form">
-          <form name="number" method="post">
+          {/*<form name="number" method="post">*/}
             <input type="hidden" name="form-name" value="number" />
             <ul className="form-list">
               <li className="list-input">
@@ -51,7 +51,7 @@ const Numbers = () => {
                 <button className="form-output form-btn" onClick={handleCopy}>Copy</button>
               </li>
             </ul>
-          </form>  
+          {/*</form>  */}
         </div>
       </div>
       
