@@ -29,12 +29,13 @@ const Numbers = () => {
       <div className="header-secondary">
         <h2>Strip and format numbers to 11 digits</h2>
         <div className="container-form">
-          <form method="post" netlify>
+          <form name="number">
             <ul className="form-list">
               <li className="list-input">
                 <label className='label' for="text-input">Input Number: </label>
                 <input 
                   className="input"
+                  name="number"
                   type="text" 
                   id="text-input"
                   value={inputValue}
