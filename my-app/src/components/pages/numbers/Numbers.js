@@ -30,6 +30,7 @@ const Numbers = () => {
         <h2>Strip and format numbers to 11 digits</h2>
         <div className="container-form">
           <form name="number" method="post">
+            <input type="hidden" name="form-name" value="number" />
             <ul className="form-list">
               <li className="list-input">
                 <label className='label' for="text-input">Input Number: </label>
