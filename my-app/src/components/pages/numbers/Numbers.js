@@ -19,7 +19,7 @@ const Numbers = () => {
     copyText.select()
     copyText.setSelectionRange(0, 9999)
     document.execCommand("copy")
-    alert(`Email copied: ${copyText.value} `)
+    alert(`Input Number copied: ${copyText.value} `)
 
   }
 
