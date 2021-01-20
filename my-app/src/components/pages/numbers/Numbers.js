@@ -33,7 +33,7 @@ const Numbers = () => {
             <input type="hidden" name="form-name" value="number" />
             <ul className="form-list">
               <li className="list-input">
-                <label className='label' for="text-input">Input Number: </label>
+                <label className='label' form="text-input">Input Number: </label>
                 <input 
                   className="input"
                   name="number"

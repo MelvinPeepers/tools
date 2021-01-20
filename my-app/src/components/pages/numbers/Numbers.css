@@ -215,7 +215,6 @@ form {
   font-size: 1.8rem;
   font-weight: bold;
   padding: 8px 20px;
-  margin: 5px 5px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -230,22 +229,22 @@ form {
   padding-bottom: 20px;
 }
 
-.list-output {
-  padding-top: 20px;
-  margin-right: 12px;
-}
-
 .input,
 .output {
   font-size: 1.8rem;
   padding: 8px 110px;
   border-radius: 4px;
-  border: 1px solid #000000;
+  border: 1px solid var(--main-tx-color);
 }
 
 .label {
   font-size: 2rem;
   margin-right: 10px;
+}
+
+.list-output {
+  display: flex;
+  align-content: center;
 }
 
 .output {
