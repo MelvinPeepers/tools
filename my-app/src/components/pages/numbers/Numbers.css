@@ -194,17 +194,12 @@ forms
   width: 100%;
 }
 
-form {
-  width: 100%;
-  text-align: center;
-}
-
-.form-input {
+.input-btn {
   background-color: var(--submit-bg-color);
   color: var(--main-tx-color);
 }
 
-.form-output {
+.output-btn {
   background-color: var(--copy-bg-color);
   color: var(--main-bg-color);
 }
@@ -221,16 +216,11 @@ form {
   border: 1px solid var(--main-tx-color);
 }
 
-.form-list {
-  margin: 0;
-}
-
 .list-input {
   padding-bottom: 20px;
 }
 
-.input,
-.output {
+.input {
   font-size: 1.8rem;
   padding: 8px 110px;
   border-radius: 4px;
@@ -244,11 +234,7 @@ form {
 
 .list-output {
   display: flex;
-  align-content: center;
-}
-
-.output {
-  width: 400px;
-  padding-bottom: 30px;
-  margin: 0 auto 10px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
 }
