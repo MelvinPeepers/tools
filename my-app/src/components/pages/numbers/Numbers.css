@@ -194,6 +194,10 @@ forms
   width: 100%;
 }
 
+.form-list {
+  text-align: center;
+}
+
 .input-btn {
   background-color: var(--submit-bg-color);
   color: var(--main-tx-color);

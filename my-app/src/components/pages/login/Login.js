@@ -10,13 +10,13 @@ const Login = () => {
       <div className="container-form">
         <form>
         <ul className="form-list">
-          <li className="list-input">
-          <label className='label' for="text-input">Username: </label>
-            <input className="input" type="text" name="email"></input>
+          <li className="form-input">
+          <label className="login-label">Username: </label>
+            <input className="login-input" type="text" name="email"></input>
           </li>
-          <li className="list-input">
-          <label className='label' for="text-input">Password: </label>
-            <input className="input" type="password" name="password"></input>
+          <li className="form-input">
+          <label className="login-label">Password: </label>
+            <input className="login-input" type="text"></input>
           </li>
           <button className="login-btn">Login</button>
           </ul>
