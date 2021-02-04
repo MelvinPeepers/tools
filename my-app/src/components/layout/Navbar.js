@@ -29,7 +29,7 @@ const Navbar = ({ icon, title }) =>  {
 }
 
 Navbar.defaultProps= {
-  title: "CC Tools",
+  title: "My Tools",
   icon: 'fas fa-tools'
 }
 
