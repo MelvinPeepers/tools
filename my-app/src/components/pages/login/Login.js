@@ -1,8 +1,8 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import './Login.css';
 
 const Login = () => {
-  const [name, setName] = useState('');
+  //const [name, setName] = useState('');
 
   return (
     <Fragment>
