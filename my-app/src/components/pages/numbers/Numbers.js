@@ -15,39 +15,42 @@ const Numbers = () => {
   }
 
   const handleCopy = () => {
-    let copyText = document.getElementById("text-input")
+    console.log('Click')
+    const copyText = document.getElementById('text-input')
     copyText.select()
     copyText.setSelectionRange(0, 9999)
-    document.execCommand("copy")
+    document.execCommand('copy')
     alert(`Input Number copied: ${copyText.value} `)
-
   }
+
+
 
 
   return (
     <Fragment>
-      <div className="header-secondary">
+      <div className='header-secondary'>
         <h2>Strip and format numbers to 11 digits</h2>
-        <div className="container-form">
+        <div className='container-form'>
             <ul>
               <li className="list-output">
-                <div className='label'>Number being formatted: </div>
+                <div className='label'>Original Number: </div>
                 <div className='label' id="text-output"> {inputValue} </div>
               </li>
               <li className="list-input">
-                <label className='label'>Number formatted: </label>
+                <label className='label'>Formatted: </label>
                 <input 
-                  className="input"
-                  name="number"
-                  type="text" 
-                  id="text-input"
+                  className='input'
+                  name='number'
+                  type='text' 
+                  id='text-input'
                   value={inputValue.replace(/[^\d]/g, "")}
                   onChange={changeInput}
                 />
-                <button className="input-btn form-btn" id="resetInput" onClick={reset}>Reset</button>
-                <button className="output-btn form-btn" onClick={handleCopy}>Copy</button>
               </li>
-              
+              <div className='button-settings'>
+                <button className='input-btn form-btn' id='resetInput' onClick={reset}>Reset</button>
+                <button className='output-btn form-btn' onClick={handleCopy}>Copy</button>
+              </div>
             </ul>
         </div>
       </div>
