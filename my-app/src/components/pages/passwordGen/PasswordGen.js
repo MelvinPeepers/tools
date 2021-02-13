@@ -24,7 +24,7 @@ const PasswordGen = () => {
   }
 
   const reset = () => {
-    setPassword('');
+    setPassword('')
   }
 
   const copyToClipboard = () => {
@@ -34,6 +34,7 @@ const PasswordGen = () => {
     newTextArea.select()
     document.execCommand('copy')
     newTextArea.remove()
+    alert(`Password copied`)
   }
 
   const handleCopyPassword = (event) => {
@@ -58,9 +59,10 @@ const PasswordGen = () => {
               max='15'
             />
           </div>
+
           <div className="password-copy">
-          <h3 className='password-field'>{password}</h3>
-          <button onClick={handleCopyPassword} className='copy-btn password-btn'>Copy</button>
+            <h3 className='password-field'>{password}</h3>
+            <button onClick={handleCopyPassword} className='copy-btn password-btn'>Copy</button>
           </div>
           
           <div className='password-txt'>
@@ -70,7 +72,7 @@ const PasswordGen = () => {
           </div>
           <div className='btn-group'>
           <button onClick={handleGeneratePassword} className='generator-btn password-btn'>Generate</button>
-          <button className='password-btn' id='resetInput' onClick={reset}>Reset</button>
+          <button className='reset-btn password-btn' id='resetInput' onClick={reset}>Reset</button>
           </div>
         </div>
       </div>
