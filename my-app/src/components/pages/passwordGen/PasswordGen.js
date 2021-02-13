@@ -34,6 +34,7 @@ const PasswordGen = () => {
     newTextArea.select()
     document.execCommand('copy')
     newTextArea.remove()
+    alert(`Password copied`)
   }
 
   const handleCopyPassword = (event) => {
