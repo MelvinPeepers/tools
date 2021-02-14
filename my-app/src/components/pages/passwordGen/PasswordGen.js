@@ -45,36 +45,39 @@ const PasswordGen = () => {
     <Fragment>
       <div className='header-secondary'>
         <h2>Password Generator</h2>
-        <div className='container-form'>
-          <div className='password-form'>
-            <label className='password-label' htmlFor='password-length'>Password Length:</label>
-            <input
-              defaultValue={passwordLength}
-              // onChange is keeping track everything the password length is changed
-              onChange={(event) => setPasswordLength(event.target.value)}
-              type='number' 
-              id='password-length' 
-              name='password-length' 
-              min='6' 
-              max='15'
-            />
-          </div>
+      </div>
 
-          <div className="password-copy">
-            <h3 className='password-field'>Password: {password}</h3>
-            <button onClick={handleCopyPassword} className='copy-btn password-btn'>Copy</button>
-          </div>
+      <div className='container-form'>
+        <div className='password-form'>
+          <label className='password-label' htmlFor='password-length'>Password Length:</label>
+          <input
+            defaultValue={passwordLength}
+            // onChange is keeping track everything the password length is changed
+            onChange={(event) => setPasswordLength(event.target.value)}
+            type='number' 
+            id='password-length' 
+            name='password-length' 
+            min='6' 
+            max='15'
+          />
+        </div>
+
+        <div className="password-copy">
+          <h3 className='password-field'>Password: {password}</h3>
+          <button onClick={handleCopyPassword} className='copy-btn password-btn'>Copy</button>
+        </div>
           
-          <div className='password-txt'>
-            <p>Password can be between 6 to 15 characters in length.</p>
-            <p>Must contain at least two groups of characters. Either letters and numbers or capitalized letters and lowercase letters</p>
-            <p>No sequences, and no special characters/symbols.</p>
-          </div>
-          <div className='btn-group'>
+        <div className='btn-group'>
           <button onClick={handleGeneratePassword} className='generator-btn password-btn'>Generate</button>
           <button onClick={reset} className='reset-btn password-btn' id='resetInput'>Reset</button>
-          </div>
         </div>
+
+        <div className='password-txt'>
+          <p>Password can be between 6 to 15 characters in length.</p>
+          <p>Must contain at least two groups of characters. Either letters and numbers or capitalized letters and lowercase letters</p>
+          <p>No sequences, and no special characters/symbols.</p>
+        </div>
+
       </div>
     </Fragment>
   )
