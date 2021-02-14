@@ -47,7 +47,7 @@ const PasswordGen = () => {
         <h2>Password Generator</h2>
         <div className='container-form'>
           <div className='password-form'>
-            <label className='password-label' htmlFor='password-length'>Password Length</label>
+            <label className='password-label' htmlFor='password-length'>Password Length:</label>
             <input
               defaultValue={passwordLength}
               // onChange is keeping track everything the password length is changed
@@ -61,7 +61,7 @@ const PasswordGen = () => {
           </div>
 
           <div className="password-copy">
-            <h3 className='password-field'>{password}</h3>
+            <h3 className='password-field'>Password: {password}</h3>
             <button onClick={handleCopyPassword} className='copy-btn password-btn'>Copy</button>
           </div>
           
@@ -72,7 +72,7 @@ const PasswordGen = () => {
           </div>
           <div className='btn-group'>
           <button onClick={handleGeneratePassword} className='generator-btn password-btn'>Generate</button>
-          <button className='reset-btn password-btn' id='resetInput' onClick={reset}>Reset</button>
+          <button onClick={reset} className='reset-btn password-btn' id='resetInput'>Reset</button>
           </div>
         </div>
       </div>
