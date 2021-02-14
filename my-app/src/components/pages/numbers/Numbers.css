@@ -199,6 +199,11 @@ forms
   padding: 20px 0;
 }
 
+.label {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
 .list-input {
   display: flex;
   justify-content: center;
@@ -214,14 +219,23 @@ forms
   width: 160px;
 }
 
-.label {
-  font-size: 2rem;
-  margin-right: 10px;
-}
-
 .button-settings {
   display: flex;
   justify-content: center;
+  margin-bottom: 60px;
+}
+
+.form-btn {
+  width: 100px;
+  border-radius: 4px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 8px 20px;
+  margin-left: 2px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid var(--main-tx-color);
 }
 
 .input-btn {
@@ -236,15 +250,24 @@ forms
   margin-left: 5px;
 }
 
-.form-btn {
-  width: 100px;
-  border-radius: 4px;
-  font-size: 1.8rem;
-  font-weight: bold;
-  padding: 8px 20px;
-  margin-left: 2px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  border: 1px solid var(--main-tx-color);
+/*
+  Media Queries
+*/
+
+@media (max-width: 380px) {
+  .label {
+    font-size: 1.8rem;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 330px) {
+  .header-secondary h2 {
+    font-size: 2rem;
+  }
+
+  .label {
+    font-size: 1.6rem;
+    margin-right: 10px;
+  }
 }
