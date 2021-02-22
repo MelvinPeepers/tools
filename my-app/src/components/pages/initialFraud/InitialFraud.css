@@ -187,96 +187,71 @@ forms
 
 */
 
-.container-form {
+.container-fraud-form {
   margin: 0 auto;
   width: 96%;
 }
 
-.password-label {
-  font-size: 2.2rem;
+.container-fraud-input {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.label {
+  font-size: 2rem;
   margin-right: 10px;
 }
 
-#password-length {
-  font-size: 2rem;
-  width: 60px;
-  padding: 5px 0 5px 10px;
-  border-radius: 4px;
-  background-color: var(--submit-bg-color);
-  border: 0;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+label {
+  width: 200px;
+  display: inline-block;
+  text-align: right;
 }
 
-.password-copy {
+.fraud-list {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  text-align: left;
   align-items: center;
-  padding: 20px 0;
-  height: 120px;
+  padding: 20px;
+  width: 100%;
 }
 
-.password-field {
-  color: var(--secondary-tx-color);
-  font-size: 2rem;
-  font-weight: bold;
-  padding-bottom: 12px;
+.input-fraud {
+  font-size: 1.8rem;
+  padding: 12px 5px;
+  border-radius: 4px;
+  border: 1px solid var(--main-tx-color);
+  width: 325px;
 }
 
-.password-btn {
-  width: 120px;
+.button-settings {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.form-btn {
+  width: 100px;
   border-radius: 4px;
   font-size: 1.8rem;
   font-weight: bold;
   padding: 8px 20px;
-  margin-left: 5px;
+  margin-left: 2px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  border: 0;
+  border: 1px solid var(--main-tx-color);
 }
 
-.copy-btn {
-  background-color: var(--copy-bg-color);
-  color: var(--main-bg-color);
-  margin: 0;
-}
-
-.generator-btn {
+.input-btn {
   background-color: var(--submit-bg-color);
   color: var(--main-tx-color);
+  margin-right: 5px;
 }
 
-.reset-btn {
-  background-color: var(--header-bg-color);
-}
-
-.btn-group {
-  padding-bottom: 20px;
-}
-
-/*
-  media quiries
-*/
-
-@media (min-width: 1024px) {
-  .container-form {
-    width: 70%;
-  }
-}
-
-@media (max-width: 500px) {
-  .password-txt p {
-    font-size: 1.8rem;
-    padding-bottom: 20px;
-  }
-}
-
-@media (max-width: 360px) {
-  .password-field {
-    font-size: 1.8rem;
-  }
+.output-btn {
+  background-color: var(--copy-bg-color);
+  color: var(--main-bg-color);
+  margin-left: 5px;
 }
