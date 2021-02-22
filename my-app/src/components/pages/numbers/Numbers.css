@@ -235,7 +235,6 @@ forms
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  border: 1px solid var(--main-tx-color);
 }
 
 .input-btn {

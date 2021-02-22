@@ -231,7 +231,7 @@ label {
   margin-bottom: 60px;
 }
 
-.form-btn {
+.fruad-btn {
   width: 100px;
   border-radius: 4px;
   font-size: 1.8rem;
@@ -241,7 +241,6 @@ label {
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  border: 1px solid var(--main-tx-color);
 }
 
 .input-btn {
