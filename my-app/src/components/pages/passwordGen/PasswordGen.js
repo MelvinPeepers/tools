@@ -43,11 +43,12 @@ const PasswordGen = () => {
 
   return (
     <Fragment>
-      <div className='header-secondary'>
+      <div className='header-password'>
         <h2>Password Generator</h2>
       </div>
 
-      <div className='container-form'>
+      <div className='container-pass'>
+
         <div className='password-form'>
           <label className='password-label' htmlFor='password-length'>Password Length:</label>
           <input
@@ -63,11 +64,11 @@ const PasswordGen = () => {
         </div>
 
         <div className="password-copy">
-          <h3 className='password-field'>Password: {password}</h3>
+          <h3 className='password-field'>Password: {password} </h3>
           <button onClick={handleCopyPassword} className='copy-btn password-btn'>Copy</button>
         </div>
           
-        <div className='btn-group'>
+        <div className='btn-pass'>
           <button onClick={handleGeneratePassword} className='generator-btn password-btn'>Generate</button>
           <button onClick={reset} className='reset-btn password-btn' id='resetInput'>Reset</button>
         </div>

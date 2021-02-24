@@ -6,23 +6,21 @@ const Login = () => {
 
   return (
     <Fragment>
-      <div className="header-secondary">
+      <div className='header-login'>
         <h2>Login to My Tools</h2>
       </div>
-      <div className="container-form">
-        <form>
-          <ul className="form-list">
-            <li className="form-input">
-              <label className="login-label">Username: </label>
-              <input className="login-input" type="text" name="email"></input>
+      <div className='container-login'>
+            <li className='login-list'>
+              <label className='login-label'>Username: </label>
+              <input className='login-input' type="text" name="email"></input>
             </li>
-            <li className="form-input">
-              <label className="login-label">Password: </label>
-              <input className="login-input" type="text"></input>
+            <li className='login-list'>
+              <label className='login-label'>Password: </label>
+              <input className='login-input' type='text'></input>
             </li>
-            <button type="submit" className="login-btn">Login</button>
-          </ul>
-        </form>
+            <div className='btn-login'>
+              <button type='submit' className='login-btn'>Login</button>
+            </div>
       </div>
     </Fragment>
   )

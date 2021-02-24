@@ -187,7 +187,7 @@ forms
 
 */
 
-.container-form {
+.container-numbers {
   margin: 0 auto;
   width: 96%;
 }
@@ -219,14 +219,14 @@ forms
   width: 160px;
 }
 
-.button-settings {
+.btn-numbers {
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
 }
 
-.form-btn {
-  width: 100px;
+.numbers-btn {
+  width: 120px;
   border-radius: 4px;
   font-size: 1.8rem;
   font-weight: bold;
@@ -235,6 +235,7 @@ forms
   cursor: pointer;
   text-align: center;
   text-decoration: none;
+  border: 0;
 }
 
 .input-btn {
@@ -247,18 +248,4 @@ forms
   background-color: var(--copy-bg-color);
   color: var(--main-bg-color);
   margin-left: 5px;
-}
-
-
-.form-btn {
-  width: 100px;
-  border-radius: 4px;
-  font-size: 1.8rem;
-  font-weight: bold;
-  padding: 8px 20px;
-  margin-left: 2px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  border: 0;
 }
