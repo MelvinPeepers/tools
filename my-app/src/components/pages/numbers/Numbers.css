@@ -249,24 +249,16 @@ forms
   margin-left: 5px;
 }
 
-/*
-  Media Queries
-*/
 
-@media (max-width: 380px) {
-  .label {
-    font-size: 1.8rem;
-    margin-right: 10px;
-  }
-}
-
-@media (max-width: 330px) {
-  .header-secondary h2 {
-    font-size: 2rem;
-  }
-
-  .label {
-    font-size: 1.6rem;
-    margin-right: 10px;
-  }
+.form-btn {
+  width: 100px;
+  border-radius: 4px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 8px 20px;
+  margin-left: 2px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
 }
