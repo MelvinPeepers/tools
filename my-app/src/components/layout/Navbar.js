@@ -17,7 +17,7 @@ const Navbar = ({ icon, title }) =>  {
             <NavLink exact to='/passwordGen' className="main-nav" activeClassName="main-nav-active">Pass Gen</NavLink>
           </li>
           <li>
-          <NavLink exact to='/fraud' className="main-nav" activeClassName="main-nav-active">Refund Cal</NavLink>
+          <NavLink exact to='/refund' className="main-nav" activeClassName="main-nav-active">Refund Cal</NavLink>
           </li>
           <li>
             <NavLink exact to='/numSequences' className="main-nav" activeClassName="main-nav-active">Num Seq</NavLink>
