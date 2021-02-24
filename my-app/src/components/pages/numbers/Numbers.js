@@ -30,6 +30,7 @@ const Numbers = () => {
     <Fragment>
       <div className='header-secondary'>
         <h2>Strip and format numbers to 11 digits</h2>
+        
         <div className='container-form'>
             <ul>
               <li className="list-output">
