@@ -30,7 +30,6 @@ const Numbers = () => {
     <Fragment>
       <div className='header-secondary'>
         <h2>Strip and format numbers to 11 digits</h2>
-        <a href='/netlify/anything' rel='noreferrer' target='_blank'>My redirect</a>
         
         <div className='container-numbers'>
             <ul>
