@@ -4,7 +4,7 @@ import { numbers, upperCaseLetters, lowerCaseLetters } from './characters'
 
 const PasswordGen = () => {
   const [ password, setPassword ] = useState('')
-  const [ passwordLength, setPasswordLength ] = useState(15)
+  const [ passwordLength, setPasswordLength ] = useState(20)
 
   const handleGeneratePassword = (event) => {
     let characterList = numbers + upperCaseLetters + lowerCaseLetters
@@ -58,8 +58,8 @@ const PasswordGen = () => {
             type='number' 
             id='password-length' 
             name='password-length' 
-            min='6' 
-            max='15'
+            min='10' 
+            max='20'
           />
         </div>
 
@@ -74,7 +74,7 @@ const PasswordGen = () => {
         </div>
 
         <div className='password-txt'>
-          <p>Password can be between 6 to 15 characters in length.</p>
+          <p>Password can be between 10 to 20 characters in length.</p>
           <p>Must contain at least two groups of characters. Either letters and numbers or capitalized letters and lowercase letters</p>
           <p>No sequences, and no special characters/symbols.</p>
         </div>

@@ -136,11 +136,12 @@ Global Styles
 
 :root {
   --main-bg-color: #fff;
-  --header-bg-color: #e98400;
+  --header-bg-color: #00ad9f;
   --main-tx-color: #0b142e;
   --secondary-tx-color: #526ead;
-  --submit-bg-color: #f9be2b;
-  --copy-bg-color: #ff1818;
+  --submit-bg-color: #00ad9f;
+  --copy-bg-color: #ff1854;
+  --sec-btn-color: #146396;
 }
 
 * {
