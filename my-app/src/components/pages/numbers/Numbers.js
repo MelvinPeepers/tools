@@ -48,7 +48,7 @@ const Numbers = () => {
                   onChange={changeInput}
                 />
               </li>
-              <div className='button-settings'>
+              <div className='btn-numbers'>
                 <button className='input-btn numbers-btn' id='resetInput' onClick={reset}>Reset</button>
                 <button className='output-btn numbers-btn' onClick={handleCopy}>Copy</button>
               </div>
