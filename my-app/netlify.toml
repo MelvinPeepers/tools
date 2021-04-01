@@ -1,2 +1,6 @@
+[build]
+
+    base = "my-app/build"
+    
 [context.branch-deploy]
     command = "npm run-script build"
