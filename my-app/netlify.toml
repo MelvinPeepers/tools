@@ -1,6 +1,6 @@
 [build]
 
     base = "my-app/build"
-    
-[context.branch-deploy]
+
+[context.netlify_redirects]
     command = "npm run-script build"
