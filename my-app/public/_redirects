@@ -1,3 +1,6 @@
+http://tools.melvinpeepers.com/* https://melvinpeepers.com/tools/:splat 301!
+https://tools.melvinpeepers.com/* https://melvinpeepers.com/tools/:splat 301!
+
 /number /numbers
 /* /index.html 200
 
