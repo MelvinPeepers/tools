@@ -1,5 +1,5 @@
-http://tools.melvinpeepers.com/* https://melvinpeepers.com/tools/:splat 301!
-https://tools.melvinpeepers.com/* https://melvinpeepers.com/tools/:splat 301!
+http://my-tools-for-use.netlify.app/* http://tools.melvinpeepers.com/:splat 301!
+https://my-tools-for-use.netlify.app/* http://tools.melvinpeepers.com/:splat 301!
 
 /number /numbers
 /* /index.html 200
