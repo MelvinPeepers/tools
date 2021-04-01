@@ -1,6 +1,4 @@
-[build]
-
-    base = "my-app/build"
-
-[context.netlify_redirects]
-    command = "npm run-script build"
+[context.branch-deploy]
+  command = "echo branch"
+[context.branch-deploy.environment]
+  NODE_ENV = "development"
