@@ -1,0 +1,8 @@
+[build.environment]
+    VARIABLE = "value"
+
+[context.context.environment]
+    NODE_ENV = "development"
+
+[context.context]
+    command = "echo $NODE_ENV"
