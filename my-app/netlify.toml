@@ -1,4 +1,0 @@
-[context.branch-deploy]
-  command = "echo branch"
-[context.branch-deploy.environment]
-  NODE_ENV = "development"
