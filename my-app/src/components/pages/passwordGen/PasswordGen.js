@@ -1,13 +1,13 @@
 import React, { Fragment, useState } from 'react';
 import './PasswordGen.css';
-import { numbers, upperCaseLetters, lowerCaseLetters } from './characters'
+import { numbers, upperCaseLetters, lowerCaseLetters, symbolRandom  } from './characters'
 
 const PasswordGen = () => {
   const [ password, setPassword ] = useState('')
   const [ passwordLength, setPasswordLength ] = useState(20)
 
   const handleGeneratePassword = (event) => {
-    let characterList = numbers + upperCaseLetters + lowerCaseLetters
+    let characterList = numbers + symbolRandom + upperCaseLetters + lowerCaseLetters
 
     setPassword(createPassword(characterList))
   }
