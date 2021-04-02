@@ -5,4 +5,4 @@
     NODE_ENV = "development"
 
 [context.context]
-    command = "echo $NODE_ENV"
+    command = "echo $NODE_ENV && npm run build"
