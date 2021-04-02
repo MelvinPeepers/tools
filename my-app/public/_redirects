@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 http://my-tools-for-use.netlify.app/* http://tools.melvinpeepers.com/:splat 301!
 https://my-tools-for-use.netlify.app/* http://tools.melvinpeepers.com/:splat 301!
 http://tools.melvinpeepers.com/* https://tools.melvinpeepers.com/passwordGen/:splat 301!
 https://tools.melvinpeepers.com/* https://tools.melvinpeepers.com/passwordGen/:splat 301!
+=======
+http://my-tools-for-use.netlify.app/* https://context.tools.melvinpeepers.com/passwordGen/:splat 301!
+https://my-tools-for-use.netlify.app/* https://context.tools.melvinpeepers.com/passwordGen/:splat 301!
+>>>>>>> e4b53bde7ec27865658ff102abf10652fde7f0df
 
 /number /numbers
 /* /index.html 200
