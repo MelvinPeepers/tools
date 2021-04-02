@@ -14,4 +14,4 @@
     ACCESS_TOKEN = "super secret"
 
 [context.deploy-preview]
-    command = "echo 'Something'"
+    command = "echo 'Something' && npm run build"
