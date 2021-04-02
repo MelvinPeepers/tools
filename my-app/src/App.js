@@ -17,7 +17,7 @@ function App() {
         <Switch>
           <Route exact path='/' render={props => (
             <Fragment>
-              <Numbers />
+              <PasswordGen />
             </Fragment>
           )} />
           <Route exact path='/passwordGen' component={PasswordGen} />
