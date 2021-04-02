@@ -20,8 +20,8 @@ function App() {
               <Numbers />
             </Fragment>
           )} />
-          <Route exact path='/numbers' component={Numbers} />
           <Route exact path='/passwordGen' component={PasswordGen} />
+          <Route exact path='/numbers' component={Numbers} />
           {/* <Route exact path='/refund' component={RefundCal} />
           <Route exact path='/numSequences' component={NumSequences} /> */}
         </Switch>

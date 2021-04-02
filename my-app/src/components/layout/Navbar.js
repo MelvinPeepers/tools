@@ -10,11 +10,11 @@ const Navbar = ({ icon, title }) =>  {
           <i className={icon} /> {title}
         </h1>
         <ul>
-          <li>
-            <NavLink exact to='/numbers' className="main-nav" activeClassName="main-nav-active">Numbers</NavLink>
+        <li>
+            <NavLink exact to='/passwordGen' className="main-nav" activeClassName="main-nav-active">Pass Gen</NavLink>
           </li>
           <li>
-            <NavLink exact to='/passwordGen' className="main-nav" activeClassName="main-nav-active">Pass Gen</NavLink>
+            <NavLink exact to='/numbers' className="main-nav" activeClassName="main-nav-active">Numbers</NavLink>
           </li>
           {/* <li>
           <NavLink exact to='/refund' className="main-nav" activeClassName="main-nav-active">Refund Cal</NavLink>
