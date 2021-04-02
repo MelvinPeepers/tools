@@ -1,5 +1,5 @@
-http://my-tools-for-use.netlify.app/* https://tools.melvinpeepers.com/:splat 301!
-https://my-tools-for-use.netlify.app/* https://tools.melvinpeepers.com/:splat 301!
+http://my-tools-for-use.netlify.app/* https://context.tools.melvinpeepers.com/passwordGen/:splat 301!
+https://my-tools-for-use.netlify.app/* https://context.tools.melvinpeepers.com/passwordGen/:splat 301!
 
 /number /numbers
 /* /index.html 200
