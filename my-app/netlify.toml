@@ -1,3 +1,6 @@
+[build]
+    command = "npm run build"
+
 [build.environment]
     VARIABLE = "value"
 
@@ -5,4 +8,10 @@
     NODE_ENV = "development"
 
 [context.context]
-    command = "echo $NODE_ENV"
+    command = "echo $NODE_ENV && npm run build"
+
+[context.branch-deploy.environment]
+    ACCESS_TOKEN = "super secret"
+
+[context.deploy-preview]
+    command = "echo 'Something'"
